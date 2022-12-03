@@ -1,0 +1,14 @@
+# python exec files
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.venv
+
+.python-version
+
+# Django stuff:
+*.log
+
+.env.*
