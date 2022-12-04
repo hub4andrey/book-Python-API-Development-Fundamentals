@@ -23,7 +23,7 @@ class ProductionConfig(Config):
 
     SECRET_KEY= os.environ.get('SECRET_KEY')
     
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 
 
 class DevelopmentConfig(Config):
@@ -31,7 +31,7 @@ class DevelopmentConfig(Config):
     DEBUG = True
     SECRET_KEY='some complex text for debugging must be written here'
     
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 
 
 class StagingConfig(Config):
@@ -39,5 +39,5 @@ class StagingConfig(Config):
     TESTING = True
     SECRET_KEY= os.environ.get('SECRET_KEY')
     
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     
